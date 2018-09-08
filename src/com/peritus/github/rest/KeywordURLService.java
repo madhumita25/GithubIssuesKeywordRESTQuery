@@ -27,9 +27,9 @@ public class KeywordURLService  {
 	 * @param keyword : input keyword
 	 * @return ArrayList with issue URLs
 	 */
-    public ArrayListURLWrapper queryKW(@PathParam("keyword") String keyword) {
-	    ArrayListURLWrapper w = new ArrayListURLWrapper();
-	    w.Issue = (ArrayList<URL>) QueryKeywordURL.queryKeywordUrl(keyword);
+    public Issues queryKW(@PathParam("keyword") String keyword) {
+	    Issues w = new Issues();
+	    w.Issue = (ArrayList<URL>) QueryKeywordURL.queryKeywordUrl(keyword.toLowerCase());
 	    return w;
 	}
 }
