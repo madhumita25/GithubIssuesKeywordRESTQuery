@@ -33,6 +33,10 @@ This REST API provides a keyword-based lookup service for pre-indexed github iss
 2. Export war (Eclipse File > Export > Web > WAR File)
 3. Follow Depoyment steps..
 
+## Enhancements TODO:
+1. Current output is extremely minimalistic. These's a lot to be done in terms of styling XML. 
+2. Could move to a formal JSON response
+3. Support multiple keywords at a time.
 
 
 
